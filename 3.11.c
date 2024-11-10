@@ -1,41 +1,46 @@
 #include <stdio.h>
-int fct(int n){
-int i=1;
 
-    while(n!=1)
-      {
-      if(n%2==0)
-        {
-        n=n/2;
+int main()
+{
+    // acu intrebarea e de ce unsigned long long, e pentru ca la un moment dat numarul poate sa sara la valori ff mari in cazul in care sa zicem introduci 5321 la x
+    unsigned long long x;
+    scanf("%llu", &x);
+    unsigned long long lMax = 0;
+    unsigned long long max = 0;
+    
+    for(unsigned long long i = 1; i < x; i++) {
+        unsigned long long lungimeLant = 1;
+        unsigned long long a = i;
+        while(a != 1) {
+            /*
+            Bit manipulation approach pentru inmultiri si impartiri:
+
+            De tinut cont pentru viitor:
+
+            a >> i = a * 2^i -> a inmultit cu 2 la puterea i
+            a << i = a / 2^i -> a impartit cu 2 la puterea i
+            
+            if(a % 2 == 0)
+                a >>= 1; 
+            else
+                a = a + (a << 1) + 1;
+            */
+
+            if(a % 2 == 0)
+                a *= 2;
+            else
+                a = 3 * a + 1;
+            
+            lungimeLant++;
         }
-      else {
-        n=3*n+1;
-
-      }
-      i++;
-
-
-      }
-
-  return i;
-}
-int main(){
-  int n,i=1;
-  int lungAct,lungMAx=0;
-  int NrSp=1;
-  printf("Valoarea maxima sub care se va cauta:\n");
-  scanf("%d",&n);
-  /*fct(n) functia practic imi da efectiv lantul de numere care
-  ies din nr citit de la tastarura si lungimea lantului */
-
-for(int ii=1;ii<=n;ii++) {
-  lungAct=fct(ii);
-  if(lungAct>lungMAx) {
-    lungMAx=lungAct;
-    NrSp=ii;
-  }
-
-}
-  printf("Numarul cu cel mai mare lant:%d\n",NrSp);
-  printf("Lungimea lantului in cauza: %d\n",lungMAx);
+        
+        if(lungimeLant > lMax) {
+            lMax = lungimeLant;
+            max = i;
+        }
+    }
+    
+    printf("%llu %d", max, lMax);
+    
+    return 0;
 }

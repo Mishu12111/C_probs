@@ -1,15 +1,15 @@
 #include <stdio.h>
-int main() {
-    for(int i=1;i<1000;i++) {
-        for(int ii=1;ii<1000;ii++) {
-            for (int iii=1;iii<1000;iii++) {
-                if(((i*i+ii*ii==iii*iii) || (i*i+iii*iii==ii*ii) || (ii*ii+iii*iii==i*i)) && (i+ii+iii==1000)) {
-                    int p=i*ii*iii;
-                    printf("Acestea sunt valorile:\n%d\n %d\n %d \n",i,ii,iii);
-                    printf("Acesta este produsul lor: %d\n",p);
-                }
 
-            }
-        }
-    }
+int main()
+{
+    for(int a = 0; a < 1000; a++)
+        for(int b = a+1; b < 1000; b++)
+            for(int c = b+1; c < 1000; c++)
+                if((a + b + c) == 1000 && (a*a) + (b*b) == (c*c)) {
+                    printf("%d\n%d\n%d\n", a, b, c); // va returna valorile lui a, b si c
+                    printf("%d\n", a * b * c); // va returna produsul lui a, b si c
+                    return 0;
+                }
+                    
+    return 0;
 }
