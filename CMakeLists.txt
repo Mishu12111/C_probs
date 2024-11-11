@@ -4,5 +4,6 @@ project(ProiecteGitHub C)
 set(CMAKE_C_STANDARD 17)
 
 add_executable(ProiecteGitHub
-        3.2.c)
+        3.11.c
+        cercuri.c)
 
