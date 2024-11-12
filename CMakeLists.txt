@@ -4,5 +4,5 @@ project(ProiecteGitHub C)
 set(CMAKE_C_STANDARD 17)
 
 add_executable(ProiecteGitHub
-        problema_414_drivere.c)
+        problema_411_drivere.c)
 
