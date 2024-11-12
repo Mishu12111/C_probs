@@ -1,7 +1,7 @@
 # ninja log v6
 6	805	7528493135040918	CMakeFiles/ProiecteGitHub.dir/main.c.obj	97c3612ef0b0d3e
 457	692	7529712902145980	ProiecteGitHub.exe	15a3b37a81497ce5
-10	524	7531411424239035	build.ninja	f2c34d69b69647d6
+10	524	7531444732991969	build.ninja	f2c34d69b69647d6
 5	83	7528523282318177	CMakeFiles/ProiecteGitHub.dir/3.6.c.obj	c4686e95ad281397
 5	98	7528496328346900	CMakeFiles/ProiecteGitHub.dir/3.3.c.obj	de7dcaf273fc6773
 5	150	7528515238420321	CMakeFiles/ProiecteGitHub.dir/3.4.c.obj	ce8380e7b91e9d80
