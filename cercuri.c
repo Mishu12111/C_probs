@@ -11,7 +11,8 @@
 
 
 int main() {
-    int test,r1,x1,y1,r2,x2,y2,dis; // declaram cele 6 variabile si distanta
+    int test;
+    double r1,x1,y1,r2,x2,y2,dis; // declaram cele 6 variabile si distanta
     /*scanf("%d",&test);
     scanf("Raza primului cerc: %d",&r1);
     scanf("Coordonatele primului cerc: %d\n%d",&x1,&y1);
