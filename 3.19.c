@@ -5,8 +5,8 @@
 
 // Funcție pentru a verifica dacă un număr este pătrat perfect
 int pp(int n) {
-  int root = (int)sqrt(n);
-  return root * root == n;
+  double root = sqrt(n);
+  return root == (double)(int)sqrt(n);
 }
 int main() {
   int x, y, z;

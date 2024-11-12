@@ -3,16 +3,13 @@
 int sum=0;
 int k=0;
 int prime(int n) {
-    int d=0;
-    for(int i=1;i<=n;i++) {
-        if(n%i==0) {
-            d++;
+    for(int j = 2; j*j <= n; j++) {
+        if(n % j == 0) {
+            // oprim imediat executarea for-ului si returnam 1, pentru ca nu avem nevoie sa stim de cati divizori are numarul n
+            return 1;
         }
     }
-    if(d==2) {
-        return 1;
-    }
-    else {return 0;}
+    return 0;
 }
 int sum_prime(int i,int n) {
 
