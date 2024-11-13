@@ -40,31 +40,21 @@ int main() {
         }
     }
 
+
     if (test == 2) {
-        for (int i = 0; i < 2; i++) {
-            printf("Introduceti numele navei %d: ", i + 1);
-            scanf(" %[^\n]%*c", nava_noua[i].nume);
-            printf("Introduceti PS pentru nava %d: ", i + 1);
-            scanf("%d", &nava_noua[i].PS);
-            printf("Introduceti PF pentru nava %d: ", i + 1);
-            scanf("%d", &nava_noua[i].PF);
-        }
-
-        for (int i = 0; i < 2; i++) {
-            printf("Numele navei %d este: %s\n", i + 1, nava_noua[i].nume);
-            printf("PS-ul navei %d este: %d\n", i + 1, nava_noua[i].PS);
-            printf("PF-ul navei %d este: %d\n", i + 1, nava_noua[i].PF);
-        }
-
-        while (nava_noua[0].PS > 0 && nava_noua[1].PS > 0) {
-            nava_noua[0].PS -= nava_noua[1].PF;
-            if (nava_noua[0].PS > 0) {
-                nava_noua[1].PS -= nava_noua[0].PF;
-            }
-            printf("PS-ul navei 1 este: %d\n", nava_noua[0].PS);
-            printf("PS-ul navei 2 este: %d\n", nava_noua[1].PS);
-        }
+            scanf("%s %s %d %d %d %d", nava1.nume, nava2.nume, &nava1.ps, &nava1.pf, &nava2.ps, &nava2.pf);
+            printf("%s %d %d\n", nava1.nume, nava1.ps, nava1.pf);
+            printf("%s %d %d\n", nava2.nume, nava2.ps, nava2.pf);
+        while (!((nava1.ps > 0 && nava1.ps <= 200 && nava1.pf > 0 && nava1.pf <= 200) ||
+                 (nava2.ps > 0 && nava2.ps <= 200 && nava2.pf > 0 && nava2.pf <= 200)))
+        {
+            printf("Introdu noile valori nava1 ps, nava2 ps, nava1 pf, nava2 pf: ");
+            scanf("%d %d %d %d",  &nava1.ps, &nava1.pf, &nava2.ps, &nava2.pf);
+            printf("%s %d %d\n", nava1.nume, nava1.ps, nava1.pf);
+            printf("%s %d %d\n", nava2.nume, nava2.ps, nava2.pf);
+        } 
     }
+
 
     if (test == 3) {
         for (int i = 0; i < 2; i++) {
@@ -85,11 +75,19 @@ int main() {
         while (nava_noua[0].PS > 0 && nava_noua[1].PS > 0) {
             nava_noua[0].PS -= nava_noua[1].PF;
             if (nava_noua[0].PS > 0) {
-                nava_noua[1].PS -= nava_noua[0].PF;
-            }
-        }
-
-        if (nava_noua[0].PS <= 0 && nava_noua[1].PS <= 0) {
+                nava_noua[1].PS -= nava_noua[0].PFelse if (test == 2) {
+            scanf("%s %s %d %d %d %d", nava1.nume, nava2.nume, &nava1.ps, &nava1.pf, &nava2.ps, &nava2.pf);
+            printf("%s %d %d\n", nava1.nume, nava1.ps, nava1.pf);
+            printf("%s %d %d\n", nava2.nume, nava2.ps, nava2.pf);
+        while (!((nava1.ps > 0 && nava1.ps <= 200 && nava1.pf > 0 && nava1.pf <= 200) ||
+                 (nava2.ps > 0 && nava2.ps <= 200 && nava2.pf > 0 && nava2.pf <= 200)))
+        {
+            printf("Introdu noile valori nava1 ps, nava2 ps, nava1 pf, nava2 pf: ");
+            scanf("%d %d %d %d",  &nava1.ps, &nava1.pf, &nava2.ps, &nava2.pf);
+            printf("%s %d %d\n", nava1.nume, nava1.ps, nava1.pf);
+            printf("%s %d %d\n", nava2.nume, nava2.ps, nava2.pf);
+        } 
+    } <= 0) {
             printf("Ambele nave au fost distruse\n");
         } else if (nava_noua[0].PS <= 0) {
             printf("Nava %s a fost distrusa\n", nava_noua[1].nume);
