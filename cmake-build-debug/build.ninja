@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/new/Brave/Downloads/lab-programare/CLion$ 2024.2.3/Pro
 
 build cmake_object_order_depends_target_ProiecteGitHub: phony || .
 
-build CMakeFiles/ProiecteGitHub.dir/4.1.c.obj: C_COMPILER__ProiecteGitHub_unscanned_Debug D$:/new/Brave/Downloads/lab-programare/CLion$ 2024.2.3/ProiecteGitHub/4.1.c || cmake_object_order_depends_target_ProiecteGitHub
-  DEP_FILE = CMakeFiles\ProiecteGitHub.dir\4.1.c.obj.d
+build CMakeFiles/ProiecteGitHub.dir/4.3_ADN.c.obj: C_COMPILER__ProiecteGitHub_unscanned_Debug D$:/new/Brave/Downloads/lab-programare/CLion$ 2024.2.3/ProiecteGitHub/4.3_ADN.c || cmake_object_order_depends_target_ProiecteGitHub
+  DEP_FILE = CMakeFiles\ProiecteGitHub.dir\4.3_ADN.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ProiecteGitHub.dir
   OBJECT_FILE_DIR = CMakeFiles\ProiecteGitHub.dir
@@ -63,7 +63,7 @@ build CMakeFiles/ProiecteGitHub.dir/4.1.c.obj: C_COMPILER__ProiecteGitHub_unscan
 #############################################
 # Link the executable ProiecteGitHub.exe
 
-build ProiecteGitHub.exe: C_EXECUTABLE_LINKER__ProiecteGitHub_Debug CMakeFiles/ProiecteGitHub.dir/4.1.c.obj
+build ProiecteGitHub.exe: C_EXECUTABLE_LINKER__ProiecteGitHub_Debug CMakeFiles/ProiecteGitHub.dir/4.3_ADN.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ProiecteGitHub.dir
