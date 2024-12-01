@@ -4,5 +4,5 @@ project(ProiecteGitHub C)
 set(CMAKE_C_STANDARD 17)
 
 add_executable(ProiecteGitHub
-        4.3_ADN.c)
+        adventcode/adventcode_day_1.c)
 

@@ -222,6 +222,12 @@ ProiecteGitHub_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 ProiecteGitHub_SOURCE_DIR:STATIC=D:/new/Brave/Downloads/lab-programare/CLion 2024.2.3/ProiecteGitHub
 
+//No help, variable specified on the command line.
+Python3_EXECUTABLE:UNINITIALIZED=D:/new/Brave/Downloads/lab-programare/CLion 2024.2.3/Py_interp/Scripts/python.exe
+
+//No help, variable specified on the command line.
+Python_EXECUTABLE:UNINITIALIZED=D:/new/Brave/Downloads/lab-programare/CLion 2024.2.3/Py_interp/Scripts/python.exe
+
 
 ########################
 # INTERNAL cache entries
